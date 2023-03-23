@@ -37,6 +37,6 @@ module.exports = class extends Generator {
   }
 
   install() {
-    this.installDependencies();
+    this.spawnCommand("npm", ["i"]);
   }
 };
