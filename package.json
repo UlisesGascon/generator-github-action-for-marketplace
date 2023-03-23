@@ -17,24 +17,24 @@
     "github-actions"
   ],
   "devDependencies": {
-    "yeoman-test": "^1.7.0",
-    "yeoman-assert": "^3.1.1",
-    "eslint": "^6.6.0",
-    "prettier": "^1.19.1",
-    "husky": "^3.0.9",
-    "lint-staged": "^9.4.3",
-    "eslint-config-prettier": "^6.6.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-config-xo": "^0.27.2",
-    "jest": "^26.1.0"
+    "yeoman-test": "1.7.0",
+    "yeoman-assert": "3.1.1",
+    "eslint": "6.6.0",
+    "prettier": "1.19.1",
+    "husky": "3.0.9",
+    "lint-staged": "9.4.3",
+    "eslint-config-prettier": "6.6.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-config-xo": "0.27.2",
+    "jest": "26.1.0"
   },
   "engines": {
     "npm": ">= 14.0.0"
   },
   "dependencies": {
-    "yeoman-generator": "5.8.0",
-    "chalk": "^2.1.0",
-    "yosay": "^2.0.2"
+    "yeoman-generator": "3.1.1",
+    "chalk": "2.1.0",
+    "yosay": "2.0.2"
   },
   "jest": {
     "testEnvironment": "node"
