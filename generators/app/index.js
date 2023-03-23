@@ -39,10 +39,10 @@ module.exports = class extends Generator {
           },
           {
             name: 'JavaScript GitHub Action',
-            value: 'js'
+            value: 'nodejs'
           }
         ],
-        default: 'js'
+        default: 'nodejs'
       },
       {
         type: 'confirm',
@@ -50,7 +50,7 @@ module.exports = class extends Generator {
         message:
           'Do you want to start the project after the generation (format, lint, build..)?',
         default: true,
-        when: answers => answers.type === 'js'
+        when: answers => answers.type === 'nodejs'
       }
     ]
 
@@ -105,7 +105,7 @@ module.exports = class extends Generator {
       copyFiles('docker', '.')
     }
 
-    if (this.props.type === 'js') {
+    if (this.props.type === 'nodejs') {
       copyFiles('js-src', 'src')
       copyFiles('js', '.')
       copyFiles('js-tests', '__tests__')
@@ -114,13 +114,17 @@ module.exports = class extends Generator {
   }
 
   install () {
-    if (this.props.type === 'js') {
+    if (this.props.type === 'nodejs' && process.env.NODE_ENV !== 'test') {
       this.spawnCommandSync('npm', ['i'])
     }
   }
 
   end () {
-    if (this.props.type === 'js' && this.props.includeQuickStart) {
+    if (
+      this.props.type === 'nodejs' &&
+      this.props.includeQuickStart &&
+      process.env.NODE_ENV !== 'test'
+    ) {
       this.spawnCommandSync('npm', ['run', 'lint:fix'])
       this.spawnCommandSync('npm', ['run', 'format:fix'])
       this.spawnCommandSync('npm', ['run', 'test'])
