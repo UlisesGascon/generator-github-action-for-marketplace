@@ -31,7 +31,7 @@ A yeoman-based template to generate Github Actions ready for the marketplace.
 
 ## Tutorial
 
-__soon__
+**soon**
 
 ## Usage
 
@@ -46,13 +46,11 @@ yo github-action-for-marketplace
 
 Development only:
 
-
 - [jest](https://www.npmjs.com/package/jest) - Delightful JavaScript Testing
 - [standard](https://www.npmjs.com/package/standard) - JavaScript style guide, linter, and formatter
 - [prettier-standard](https://www.npmjs.com/package/prettier-standard) - Formats with Prettier and lints with ESLint+Standard! (✿◠‿◠)
 - [yeoman-assert](https://www.npmjs.com/package/yeoman-assert) - yeoman-assert is extending the native Node.js assert module.
 - [yeoman-test](https://www.npmjs.com/package/yeoman-test) - Test utilities for Yeoman generators
-
 
 Production only:
 
@@ -70,7 +68,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-- **Ulises Gascón** - *Initial work- - [@ulisesGascon](https://github.com/ulisesGascon)
+- **Ulises Gascón** - \*Initial work- - [@ulisesGascon](https://github.com/ulisesGascon)
 
 See also the list of [contributors](https://github.com/ulisesGascon/generator-github-action-for-marketplace/contributors) who participated in this project.
 
