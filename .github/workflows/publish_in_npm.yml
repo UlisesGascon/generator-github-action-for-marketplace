@@ -24,10 +24,14 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: npm ci
-      - run: npm run lint
-      - run: npm run format
-      - run: npm run test
+      - name: 📦 Install dependencies
+        run: npm ci
+      - name: 🔍 lint
+        run: npm lint
+      - name: 🪄 format
+        run: npm format
+      - name: 🧪 Run tests
+        run: npm run test
 
   publish-npm:
     name: Publish to NPM
