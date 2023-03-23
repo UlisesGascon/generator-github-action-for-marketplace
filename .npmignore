@@ -1,0 +1,6 @@
+__tests__/
+.github/
+.vscode/
+.editorconfig
+.gitattributes
+.prettierignore
