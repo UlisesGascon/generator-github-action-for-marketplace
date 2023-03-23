@@ -18,9 +18,9 @@
   ],
   "devDependencies": {
     "jest": "26.1.0",
-    "yeoman-assert": "3.1.1",
     "prettier-standard": "16.4.1",
-    "standard": "17.0.0",
+    "standard": "16.0.4",
+    "yeoman-assert": "3.1.1",
     "yeoman-test": "1.7.0"
   },
   "standard": {
@@ -41,17 +41,14 @@
     "yeoman-generator": "3.1.1",
     "yosay": "2.0.2"
   },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "scripts": {
     "format:fix": "prettier-standard --format",
     "format": "prettier-standard --check",
     "lint": "standard",
     "lint:fix": "standard --fix",
-    "test": "jest --detectOpenHandles --forceExit  --verbose",
-    "test:coverage": "jest --detectOpenHandles --forceExit --verbose --coverage",
-    "test:watch": "jest --detectOpenHandles --forceExit --verbose --watchAll"
+    "test": "jest --detectOpenHandles --forceExit  --verbose ./__tests__",
+    "test:coverage": "jest --detectOpenHandles --forceExit --verbose --coverage ./__tests__",
+    "test:watch": "jest --detectOpenHandles --forceExit --verbose --watchAll ./__tests__"
   },
   "repository": "https://github.com/UlisesGascon/generator-github-action-for-marketplace",
   "license": "MIT"
