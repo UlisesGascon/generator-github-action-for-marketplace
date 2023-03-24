@@ -1,6 +1,6 @@
 {
   "name": "generator-github-action-for-marketplace",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A yeoman-based template to generate Github Actions ready for the marketplace",
   "homepage": "https://github.com/UlisesGascon/generator-github-action-for-marketplace",
   "author": {
