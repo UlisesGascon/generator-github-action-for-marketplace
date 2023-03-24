@@ -18,6 +18,7 @@ describe('generator-github-action-for-marketplace: Docker', () => {
 
   it('Include Common Files', () => {
     assert.file(['.gitignore'])
+    assert.file(['.prettierignore'])
   })
 
   it('Include Specific Docker related files', () => {
